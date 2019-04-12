@@ -1,0 +1,16 @@
+{% block sw_cms_block_fancyBlock_preview %}
+    <div class="sw-cms-preview-fancyBlock">
+        <h2>Preview Headline</h2>
+        <p>This is the preview text.</p>
+        <h2>Preview Headline 2</h2>
+        <p>This is the preview text 2.</p>
+        <div class="sw-cms-preview-image-row">
+            <img :src="'/administration/static/img/cms/image_preview_small.jpg' | asset">
+            <img :src="'/administration/static/img/cms/image_preview_small.jpg' | asset">
+            <img :src="'/administration/static/img/cms/image_preview_small.jpg' | asset">
+        </div>
+        <div class="sw-cms-preview-image-bottom">
+            <img :src="'/administration/static/img/cms/image_preview_medium.jpg' | asset">
+        </div>
+    </div>
+{% endblock %}

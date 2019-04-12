@@ -1,0 +1,15 @@
+{% block sw_cms_block_fancyBlock %}
+    <div class="sw-cms-block-fancyBlock">
+        <slot name="text-content">{% block sw_cms_block_fancyBlock_slot_text_content %}{% endblock %}</slot>
+        <div class="sw-cms-block-image-row">
+            {% javascript %}
+            {% end %}
+            <slot name="left">{% block sw_cms_block_image_row_slot_left %}{% endblock %}</slot>
+            <slot name="center">{% block sw_cms_block_image_row_slot_center %}{% endblock %}</slot>
+            <slot name="right">{% block sw_cms_block_image_row_slot_right %}{% endblock %}</slot>
+        </div>
+        <div class="sw-cms-block-img-bottom">
+            <slot name="img_bottom">{% block sw_cms_block_image_bottom %}{% endblock %}</slot>
+        </div>
+    </div>
+{% endblock %}
